@@ -1,0 +1,61 @@
+body {
+background-color: black;
+color:white;
+
+
+}
+.grid1 {
+    margin:0;
+    padding:0;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "content content content"
+    "footer footer footer";
+    border-left: ;
+    border-right: ;
+  
+}
+
+.grid1 > div.header {
+    grid-area: header;
+  }
+  .grid1 > div.menu {
+    grid-area: menu;
+  }
+  .grid1 > div.content {
+    grid-area: content;
+  }
+  .grid1 > div.footer {
+    grid-area: footer;
+  }
+
+
+.flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+#flexbox2 {
+    justify-content: space-between;
+}
+.left {
+  flex:9
+}
+
+.right {
+  flex:1
+}
+#link {
+  margin:0;
+  padding:0;
+  border:0;
+  text-align: end;
+}
+
+#pfp {
+  align-self: center;
+  margin-left: 100px;
+}
