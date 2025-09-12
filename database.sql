@@ -160,6 +160,27 @@ CREATE TABLE `user_comments` (
   `comment_text` varchar(5000),
   `comment_location` varchar(500) NOT NULL
 );
+CREATE TABLE `as_patchnotes_backlog` (
+  `id_asnote` int PRIMARY KEY,
+  `asnote_name` varchar(30) NOT NULL,
+  `asnote_note` varchar(65365) NOT NULL
+);
+CREATE TABLE `as_tournament_backlog` (
+  `id_astournament` int PRIMARY KEY NOT NULL,
+  `astournament_map` int NOT NULL,
+  `astournament_desc` varchar(60) NOT NULL,
+  `astournament_patch` int NOT NULL,
+  `astournament_start` datetime NOT NULL,
+  `astournament_end` datetime NOT NULL,
+  `astournament_winner`varchar(30) 
+);
+CREATE TABLE `eventplayer_backlog` (
+  `id_eventplayer` int,
+  `halloween_candy` int,
+  `halloween_coins` int,
+  `xmas_bulbs` int
+);
+
 
 ALTER TABLE `as_character` COMMENT = 'undertale D D D A G#';
 
@@ -204,3 +225,4 @@ ALTER TABLE `mc_xmasplots` ADD FOREIGN KEY (`xmasplot_owner`) REFERENCES `eventp
 ALTER TABLE `eventplayer` ADD FOREIGN KEY (`id_eventplayer`) REFERENCES `users` (`id_user`);
 
 ALTER TABLE `user_comments` ADD FOREIGN KEY (`id_user`) REFERENCES `users` (`id_user`);
+
