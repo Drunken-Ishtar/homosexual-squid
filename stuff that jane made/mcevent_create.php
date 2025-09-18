@@ -32,10 +32,10 @@ if ($r2['user_type'] != 1){
             while($r = mysqli_fetch_array($exe)){
                 $id_mctype = $r['id_mctype'];
                 $mctype_name = $r['mctype_name'];
-                echo "<option value='$id_mctype'>$mctype_name</option>";
+                echo "<option value='$id_mctype'>$mctype_name</option><br>";
             }
             ?>
-            <label>start date</label>
+            <h1>start date</h1>
             <input type='date'name='mcevent_start'><br>
             <label>end date</label>
             <input type='date'name='mcevent_end'><br> 
