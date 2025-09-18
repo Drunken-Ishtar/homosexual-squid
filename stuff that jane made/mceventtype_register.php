@@ -1,9 +1,9 @@
 <?php include 'top.html'
 ?>
 <?php 
-$marca = $_GET['marca'];
-$con=mysqli_connect('localhost','root','','comercio');
-$sql = "insert into marcas (nome_marca) values('$marca')";         
+$mctype_name = $_GET['mctype_name'];
+$con=mysqli_connect('localhost','root','','thebigsecond');
+$sql = "insert into mc_eventtype (mctype_name) values('$mctype_name')";         
 $exe = mysqli_query($con, $sql);
 if ($exe){
     echo"works :)";

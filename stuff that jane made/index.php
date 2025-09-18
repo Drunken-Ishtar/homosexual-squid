@@ -20,5 +20,5 @@ include 'top.html'
     </body>
 </html>
 <?php
-include 'bottom.html'
+include 'bottom.html';
 ?>
