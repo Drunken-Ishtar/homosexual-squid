@@ -4,7 +4,7 @@
 $con = mysqli_connect('localhost','root','','thebigsecond');
 $sql = "select * from mc_events order by id_mcevent ASC";
 $exe = mysqli_query($con, $sql);
-echo"<a href='mcevent_create.php'>add an event type</a><br>";
+echo"<a href='mceventtype_create.php'>add an event type</a><br>";
 while ($res = mysqli_fetch_array ($exe)){
     $id_mctype = $res['id_mctype'];
     $mctype_name = $res['mctype_name'];
@@ -14,4 +14,4 @@ while ($res = mysqli_fetch_array ($exe)){
 ?>
 <?php include 'bottom.html'
 
-?>o
+?>
