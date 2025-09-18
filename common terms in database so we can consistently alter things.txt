@@ -10,3 +10,9 @@ accuracy = degrees of deviance from crosshair (this might need to be changed aft
 
 
 REMEMBER : ADD TRIGGERS, BACKLOG, AND CHANGELOG TABLES 
+
+Quick include top and bottom:
+
+    <?php include 'top.html';?>
+
+    <?php include 'bottom.html';?>

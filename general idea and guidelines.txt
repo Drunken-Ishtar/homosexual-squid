@@ -1,4 +1,0 @@
-This is the app we dont want to make but have to
-
-
-test
