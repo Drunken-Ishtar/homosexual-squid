@@ -23,22 +23,30 @@ if ($r2['user_type'] != 1){
             <input type='text' name='mcevent_name'><br>
             <label>description</label>
             <input type='text'name='mcevent_desc'><br> 
-            <label>event type</label>
-            <select name="marca">
-            <?php
-            $con3 = mysqli_connect('localhost', 'root', '', 'thebigsecond');
-            $sql3 = "select * from mc_eventtype order by id_mctype asc";
-            $exe3 = mysqli_query($con3, $sql3);
-            while($r = mysqli_fetch_array($exe)){
-                $id_mctype = $r['id_mctype'];
-                $mctype_name = $r['mctype_name'];
-                echo "<option value='$id_mctype'>$mctype_name</option><br>";
-            }
-            ?>
-            <h1>start date</h1>
+           
+            
+            <label>start date</label>
             <input type='date'name='mcevent_start'><br>
             <label>end date</label>
-            <input type='date'name='mcevent_end'><br> 
+            <input type='date'name='mcevent_end'><br>
+            event type <select name="mcevent_type">
+            <?php 
+                $sql1 = "SELECT * FROM mc_eventtype order by mctype_name asc";
+                $exe1 = mysqli_query($con, $sql1);
+                $r = mysqli_fetch_array($exe);
+                while($rel1 = mysqli_fetch_array($exe1)){
+                    $id_mctype = $r['id_mctype'];
+                    $mctype_name = $rel1['mctype_name'];
+                    if($r['mcevent_type'] == $id_mctype){
+                        $aux = "selected";
+                    }
+                    else{
+                        $aux = "";
+                    }
+                    echo "<option $aux value='$id_mctype'>$mctype_name</option><br>";
+                }
+            ?>
+            
             <input type='submit' value='ver resullpwatod'>      
         </form>
 </html>

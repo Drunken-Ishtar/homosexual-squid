@@ -2,7 +2,7 @@
 ?>
 <?php
 $con = mysqli_connect('localhost','root','','thebigsecond');
-$sql = "select * from mc_events order by id_mcevent ASC";
+$sql = "select * from mc_eventtype order by id_mctype ASC";
 $exe = mysqli_query($con, $sql);
 echo"<a href='mceventtype_create.php'>add an event type</a><br>";
 while ($res = mysqli_fetch_array ($exe)){
