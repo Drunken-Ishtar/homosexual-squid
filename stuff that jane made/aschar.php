@@ -39,5 +39,5 @@ while ($res = mysqli_fetch_array ($exe)){
 ?>
 <?php include 'bottom.html'
 ?>
-
-/* needs testing */
+<?php
+/* needs testing */?>
