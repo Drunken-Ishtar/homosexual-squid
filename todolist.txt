@@ -1,0 +1,24 @@
+ws = walkspeed
+rs = runspeed
+desc = description
+dmg = damage per shot 
+dps = damage per second 
+maxammo = magazine size 
+reserveammo = total ammo
+accuracy = degrees of deviance from crosshair (this might need to be changed after the formula update)
+
+
+IMPORTANT: STANDARDIZE DATABASE NAME AS SOMETHING THAT MAKES SENSE. 
+    PROBABLY ALSO IMPORTANT: MAKE AN ACTUAL README SO THAT ISRA AND THE OTHERS CAN ACTUALLY USE THIS THING
+
+REMEMBER : ADD TRIGGERS AND CHANGELOG TABLES 
+
+Quick include top and bottom:
+
+    <?php include 'top.html';?>
+
+    <?php include 'bottom.html';?>
+
+    backlog tables: Should be working, emphasis on the should
+    triggers: not started, backlog and changelog tables are directly dependent on these things tho
+    changelog tables: Not sure if needed
