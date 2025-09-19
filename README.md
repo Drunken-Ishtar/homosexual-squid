@@ -27,3 +27,12 @@ Q: Was this AI generated?
 Q: Can I help maintain this?
     A: That's not for me to decide.
 
+
+Songs that were listened to on Loop in the making of this:
+Ama Section:
+    https://youtu.be/c56TpxfO9q0?si=Icr_5AO_U-wrxhm1 Telepathy feat. Hatsune Miku
+    https://youtu.be/UnIhRpIT7nc?si=N3MNwne0N2do8ZJ9 Lagtrain Vo: kaai Yuki
+    https://youtu.be/pXnU2JbJjl4?si=a72zqsjWrqxKjXdJ My Way Haru Urara Version
+    https://youtu.be/iXZX_HAmbTU?si=sHGrV9q0zoJcE5Y6 Number go up
+    https://youtu.be/v7aZjZmSrps?si=xUHtcOp0EUvzL4NB MoeChakkaFire - Will Stetson Cover
+    https://youtu.be/3e8tdT92KKI?si=u_9-Vv41qNB9TJ7l California Girls - Teto Cover
