@@ -1,0 +1,37 @@
+//--//
+
+DROP TRIGGER IF EXISTS trg_bklg_weapon;
+DELIMITER //
+CREATE TRIGGER trg_bklg_weapon;
+BEFORE UPDATE ON as_weapon 
+FOR EACH ROW
+BEGIN
+    INSERT INTO backlog_weapon(id_weapon,id_chara,weapon_name,weapon_rpm,weapon_dps,weapon_maxammo,weapon_reserveammo,weapon_dmg,weapon_headshot,weapon_accuracy,weapon_desc,weapon_hp)
+    VALUES (OLD.id_weapon,OLD.id_chara,OLD.weapon_name,OLD.weapon_rpm,OLD.weapon_dps,OLD.weapon_maxammo,OLD.weapon_reserveammo,OLD.weapon_dmg,OLD.weapon_headshot,OLD.weapon_accuracy,OLD.weapon_desc,OLD.weapon_hp)
+END//
+DELIMITER ;
+;
+
+//--//
+
+DROP TRIGGER IF EXISTS trg_bklg_chara;
+DELIMITER //
+CREATE TRIGGER trg_bklg_chara;
+BEFORE UPDATE ON as_chara 
+FOR EACH ROW
+BEGIN
+    INSERT INTO backlog_chara(id_chara,chara_name,chara_hp,chara_ws,chara_rs,chara_primary,chara_secondary,chara_desc,chara_lore)
+    VALUES (OLD.id_chara,OLD.chara_name,OLD.chara_hp,OLD.chara_ws,OLD.chara_rs,OLD.chara_primary,OLD.chara_secondary,OLD.chara_desc,OLD.chara_lore)
+END//
+DELIMITER ;
+;
+
+//--//
+
+DROP TRIGGER IF EXISTS trg_bklg_map;
+DELIMITER //
+CREATE TRIGGER trg_bklg_map;
+BEFORE UPDATE ON as_map
+FOR EACH ROW
+BEGIN 
+    
