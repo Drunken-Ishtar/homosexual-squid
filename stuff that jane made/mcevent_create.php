@@ -31,12 +31,13 @@ if ($r2['user_type'] != 1){
             <input type='date'name='mcevent_end'><br>
             event type <select name="mcevent_type">
             <?php 
-                $sql1 = "SELECT * FROM mc_eventtype order by mctype_name asc";
+                $sql1 = "SELECT * FROM mc_eventtype order by id_mctype asc";
+                $con=mysqli_connect('localhost','root','','thebigsecond');
                 $exe1 = mysqli_query($con, $sql1);
                 $r = mysqli_fetch_array($exe);
-                while($rel1 = mysqli_fetch_array($exe1)){
+                while($r = mysqli_fetch_array($exe1)){
                     $id_mctype = $r['id_mctype'];
-                    $mctype_name = $rel1['mctype_name'];
+                    $mctype_name = $r['mctype_name'];
                     if($r['mcevent_type'] == $id_mctype){
                         $aux = "selected";
                     }
