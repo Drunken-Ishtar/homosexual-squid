@@ -1,0 +1,18 @@
+<?php include 'top.html'
+?>
+<?php 
+$mctype_name = $_GET['mctype_name'];
+$con=mysqli_connect('localhost','root','','thebigsecond');
+$sql = "insert into mc_eventtype (mctype_name) values('$mctype_name')";         
+$exe = mysqli_query($con, $sql);
+if ($exe){
+    echo"works :)";
+}
+else{
+    echo"1x1x1x1 done fucked something up";
+}
+$fecha=mysqli_close($con);
+?>
+<?php include 'bottom.html'
+?>
+
