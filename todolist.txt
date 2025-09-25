@@ -15,7 +15,7 @@ REMEMBER : ADD TRIGGERS AND CHANGELOG TABLES
 
 Quick include top and bottom:
 
-    <?php include 'top.html';?>
+    <?php include 'top.html'; ?>
 
     <?php include 'bottom.html';?>
 
@@ -26,6 +26,7 @@ Quick include top and bottom:
 
 
     <?php 
+    include 'top.html';
     if(empty($_SESSION['username'])) {
         header('location:login.php');
     };

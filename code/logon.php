@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<?php include 'top.html'; ?>
+
 <form action ='login.php' method='POST'>
     user<input type='text' name ='username'>
     password<input type='password' name='password'>
