@@ -16,7 +16,7 @@ if ($r['username']!=NULL){
     $_SESSION ['username'] = $r['username'];
     $_SESSION ['id_user'] = $r['id_user'];
     $_SESSION ['user_type'] = $r['user_type'];
-    echo"IT FUCKING WORKED!!!!";
+    header('location:index.php');
 }
 else{
     echo"login and/or password is wrong";
