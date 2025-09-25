@@ -1,7 +1,3 @@
-DROP DATABASE IF EXISTS 3d_wiki;
-CREATE DATABASE 3d_wiki;
-
-
 CREATE TABLE `users` (
   `id_user` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `username` varchar(255) NOT NULL,
