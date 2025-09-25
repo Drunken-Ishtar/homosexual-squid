@@ -1,7 +1,7 @@
 <?php include 'top.html'
 session_start();
   if(empty($_SESSION['username'])) {
-        header(location:'login.php');
+        header('location:login.php');
     };
 if (!empty($_SESSION['username']))
 $con=mysqli_connect('localhost','root','','3d_wiki');
