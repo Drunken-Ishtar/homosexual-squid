@@ -5,7 +5,7 @@ CREATE TABLE `users` (
   `username_steam` varchar(40),
   `username_minecraft` varchar(40),
   `user_avatar` varchar(20),
-  `user_type ` tinyint not null
+  `user_type` tinyint not null
 );
 
 CREATE TABLE `as_tournament` (
