@@ -1,6 +1,11 @@
 <?php include 'top.html'
 ?>
 <?php 
+    if(empty($_SESSION['username'])) {
+        header(location:'login.php');
+    };
+    ?>
+<?php 
 $id_chara = $_GET['id_chara'];
 $chara_name = $_GET['chara_name'];
 $chara_hp = $_GET['chara_hp'];

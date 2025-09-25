@@ -1,5 +1,11 @@
 <?php  include 'top.html';
+  if(empty($_SESSION['username'])) {
+        header(location:'login.php');
+    };
 session_start();
+if(empty($_SESSION['username'])) {
+    header(location:'login.php');
+};
 if (!empty($_SESSION['username']))
 $con2=mysqli_connect('localhost','root','','thebigsecond');
 $sql2 = "select * from users where username like '$_SESSION[username]' and password like '$_SESSION[password]'";

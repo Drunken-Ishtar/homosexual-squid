@@ -1,5 +1,10 @@
 <?php include 'top.html'
+session_start();
+  if(empty($_SESSION['username'])) {
+        header(location:'login.php');
+    };
 ?>
+
 <?php 
 $mctype_name = $_GET['mctype_name'];
 $con=mysqli_connect('localhost','root','','thebigsecond');

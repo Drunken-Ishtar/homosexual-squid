@@ -1,5 +1,11 @@
-<?php include 'top.html'
-?>
+<?php include 'top.html';?>
+<?php 
+session_start();
+
+    if(empty($_SESSION['username'])) {
+        header(location:'login.php');
+    };
+    ?>
 <?php 
 $mcevent_name = $_GET['mcevent_name'];
 $mcevent_desc = $_GET['mcevent_desc'];
@@ -11,7 +17,7 @@ $sql = "insert into mc_events (mcevent_name,mcevent_desc,mcevent_type,mcevent_st
 $exe = mysqli_query($con, $sql);
 echo"$sql";
 if ($exe){
-    echo"it worked, go back <a href='mcevent.php'>minecrat events</a>";
+    echo"it worked, <a href='mcevent.php'>go back</a>";
 }
 else{
     echo"1x1x1x1 done fucked something up";

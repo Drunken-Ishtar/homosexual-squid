@@ -1,5 +1,11 @@
-<?php include 'top.html'
-?>
+<?php include 'top.html';?>
+<?php 
+session_start();
+
+    if(empty($_SESSION['username'])) {
+        header(location:'login.php');
+    };
+    ?>
 <?php
 $con = mysqli_connect('localhost','root','','thebigsecond');
 $sql = "select * from mc_events order by id_mcevent ASC";

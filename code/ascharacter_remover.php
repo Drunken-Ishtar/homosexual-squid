@@ -1,5 +1,10 @@
 <?php include 'top.html'
 ?>
+<?php 
+    if(empty($_SESSION['username'])) {
+        header(location:'login.php');
+    };
+    ?>
 <?php
     $con = mysqli_connect('localhost','root','','thebigsecond');
     $id_chara = $_GET['id_chara'];

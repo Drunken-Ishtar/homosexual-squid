@@ -7,7 +7,7 @@ $username=$_POST['username'];
 $password = $_POST['password'];
 $_SESSION['username'] = $username;
 $_SESSION['password'] = $password;
-$sql = "select * from users where username like '$username' and password like '$password'";
+$sql = "select * from users where username like '$username' and password = '$password'";
 $exe=mysqli_query($con,$sql);
 $r = mysqli_fetch_array($exe);
 mysqli_close($con);

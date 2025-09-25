@@ -1,6 +1,11 @@
 <?php include 'top.html'
 ?>
 <?php 
+    if(empty($_SESSION['username'])) {
+        header(location:'login.php');
+    };
+    ?>
+<?php 
 $map_name = $_GET['map_name'];
 $map_desc = $_GET['map_desc'];
 $mapsfolder = 'map_img/';

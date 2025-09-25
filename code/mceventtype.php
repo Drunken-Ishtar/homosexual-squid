@@ -1,5 +1,10 @@
 <?php include 'top.html'
+session_start();
+  if(empty($_SESSION['username'])) {
+        header(location:'login.php');
+    };
 ?>
+
 <?php
 $con = mysqli_connect('localhost','root','','thebigsecond');
 $sql = "select * from mc_eventtype order by id_mctype ASC";

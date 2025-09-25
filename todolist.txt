@@ -22,3 +22,11 @@ Quick include top and bottom:
     backlog tables: Should be working, emphasis on the should
     triggers: not started, backlog and changelog tables are directly dependent on these things tho
     changelog tables: Not sure if needed
+
+
+
+    <?php 
+    if(empty($_SESSION['username'])) {
+        header(location:'login.php');
+    };
+    ?>

@@ -1,4 +1,4 @@
-<?php include 'top.html';?>
+    <?php include 'top.html';?>
 <?php 
 session_start();
 
@@ -6,3 +6,9 @@ session_start();
         header(location:'login.php');
     };
     ?>
+
+
+
+
+
+    <?php include 'bottom.html';?>
