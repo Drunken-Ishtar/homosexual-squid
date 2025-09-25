@@ -8,7 +8,7 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `username_steam` varchar(40),
   `username_minecraft` varchar(40),
-  `user_avatar` varchar(20)
+  `user_avatar` varchar(20),
   `user_type ` smallint not null,
 );
 
