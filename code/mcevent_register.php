@@ -12,7 +12,7 @@ $mcevent_desc = $_GET['mcevent_desc'];
 $mcevent_type = $_GET['mcevent_type'];
 $mcevent_start = $_GET['mcevent_start'];
 $mcevent_end = $_GET['mcevent_end'];
-$con=mysqli_connect('localhost','root','','thebigsecond');
+$con=mysqli_connect('localhost','root','','3d_wiki');
 $sql = "insert into mc_events (mcevent_name,mcevent_desc,mcevent_type,mcevent_start,mcevent_end) values('$mcevent_name', '$mcevent_desc', '$mcevent_type', '$mcevent_start', '$mcevent_end')";         
 $exe = mysqli_query($con, $sql);
 echo"$sql";

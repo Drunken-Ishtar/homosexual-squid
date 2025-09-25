@@ -6,7 +6,7 @@
     };
     ?>
 <?php
-    $con = mysqli_connect('localhost','root','','thebigsecond');
+    $con = mysqli_connect('localhost','root','','3d_wiki');
     $id_chara = $_GET['id_chara'];
     $sql="delete from as_character where id_chara=$id_chara";
     $exe = mysqli_query($con, $sql);

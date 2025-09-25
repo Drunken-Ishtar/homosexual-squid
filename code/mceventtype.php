@@ -6,7 +6,7 @@ session_start();
 ?>
 
 <?php
-$con = mysqli_connect('localhost','root','','thebigsecond');
+$con = mysqli_connect('localhost','root','','3d_wiki');
 $sql = "select * from mc_eventtype order by id_mctype ASC";
 $exe = mysqli_query($con, $sql);
 echo"<a href='mceventtype_create.php'>add an event type</a><br>";

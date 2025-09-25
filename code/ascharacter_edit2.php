@@ -15,7 +15,7 @@ $chara_primary = $_GET['chara_primary'];
 $chara_secondary = $_GET['chara_secondary'];
 $chara_desc = $_GET['chara_desc'];
 $chara_lore = $_GET['chara_lore'];
-$con=mysqli_connect('localhost','root','','thebigsecond');
+$con=mysqli_connect('localhost','root','','3d_wiki');
 $sql = "update as_character set chara_name = '$chara_name',chara_hp = '$chara_hp',chara_ws = '$chara_ws',chara_rs = '$chara_rs',
 chara_primary = '$chara_primary',chara_secondary = '$chara_secondary',chara_desc = '$chara_desc',chara_lore = '$chara_lore'where id_chara=$id_chara";         
 $exe = mysqli_query($con, $sql);

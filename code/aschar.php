@@ -6,7 +6,7 @@ session_start();
 ?>
 
 <?php
-$con = mysqli_connect('localhost','root','','thebigsecond');
+$con = mysqli_connect('localhost','root','','3d_wiki');
 $sql = "select * from as_character order by id_chara ASC";
 $exe = mysqli_query($con, $sql);
 echo"<a href='ascharcreate.php'>add a character</a><br>";

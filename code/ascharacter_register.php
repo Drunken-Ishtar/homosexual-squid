@@ -14,7 +14,7 @@ $chara_primary = $_GET['chara_primary'];
 $chara_secondary = $_GET['chara_secondary'];
 $chara_desc = $_GET['chara_desc'];
 $chara_lore = $_GET['chara_lore'];
-$con=mysqli_connect('localhost','root','','thebigsecond');
+$con=mysqli_connect('localhost','root','','3d_wiki');
 $sql = "insert into as_character (chara_name,chara_hp,chara_ws,chara_rs,chara_primary,chara_secondary,chara_desc,chara_lore) values('$chara_name', '$chara_hp', '$chara_ws', '$chara_rs', '$chara_primary','$chara_secondary','$chara_desc','$chara_lore')";         
 $exe = mysqli_query($con, $sql);
 if ($exe){

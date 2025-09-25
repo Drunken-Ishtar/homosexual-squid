@@ -2,7 +2,7 @@
 session_start();
 
 
-$con=mysqli_connect('localhost','root','','thebigsecond');
+$con=mysqli_connect('localhost','root','','3d_wiki');
 $username=$_POST['username'];
 $password = $_POST['password'];
 $_SESSION['username'] = $username;

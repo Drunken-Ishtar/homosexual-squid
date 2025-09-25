@@ -5,7 +5,7 @@ if(empty($_SESSION['username'])) {
 };
 
 if (!empty($_SESSION['username']))
-$con2=mysqli_connect('localhost','root','','thebigsecond');
+$con2=mysqli_connect('localhost','root','','3d_wiki');
 $sql2 = "select * from users where username like '$_SESSION[username]' and password like '$_SESSION[password]'";
 $exe2=mysqli_query($con2,$sql2);
 $r2 = mysqli_fetch_array($exe2);

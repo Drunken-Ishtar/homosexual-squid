@@ -13,7 +13,7 @@ $map_image = basename($_FILES['map_image']['map_name']);
 $arq = $mapsfolder.$map_image;
 if (move_uploaded_file($_FILES['map_image']['name'], $arq)) {
     echo "Arquivo válido e enviado com sucesso.\n";
-$con=mysqli_connect('localhost','root','','thebigsecond');
+$con=mysqli_connect('localhost','root','','3d_wiki');
 $sql = "insert into as_map (map_name,map_desc,map_image) values('$map_name', '$map_desc', '$map_image')";         
 $ins = mysqli_query($con, $sql);
     if($ins){

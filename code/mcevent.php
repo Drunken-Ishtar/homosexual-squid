@@ -7,7 +7,7 @@ session_start();
     };
     ?>
 <?php
-$con = mysqli_connect('localhost','root','','thebigsecond');
+$con = mysqli_connect('localhost','root','','3d_wiki');
 $sql = "select * from mc_events order by id_mcevent ASC";
 $exe = mysqli_query($con, $sql);
 echo"<a href='mcevent_create.php'>add an event</a><br>";
