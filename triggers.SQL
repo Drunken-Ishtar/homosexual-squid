@@ -1,4 +1,4 @@
---todos os triggers tem a mesma função, manter um backlog de determinadas tabelas importantes que são comummente alteradas --
+--todos os triggers tem a mesma função, manter um backlog de determinadas tabelas importantes que são comummente alteradas
 
 DROP TRIGGER IF EXISTS trg_bklg_weapon;
 DELIMITER //
