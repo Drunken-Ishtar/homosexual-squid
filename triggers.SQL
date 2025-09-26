@@ -18,7 +18,7 @@ DELIMITER ;
 DROP TRIGGER IF EXISTS trg_bklg_chara;
 DELIMITER //
 CREATE TRIGGER trg_bklg_chara
-BEFORE UPDATE ON as_chara 
+BEFORE UPDATE ON as_character 
 FOR EACH ROW
 BEGIN
     INSERT INTO backlog_chara(id_chara,chara_name,chara_hp,chara_ws,chara_rs,chara_primary,chara_secondary,chara_desc,chara_lore)
