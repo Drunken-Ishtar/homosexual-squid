@@ -1,14 +1,13 @@
-# homosexual-squid
-## Introduction: 
+# Introduction: 
 
 Hello poor unfortunate soul that is reading this,
 Welcome to the official source code for the DDD Wiki.
 This code is an abhorrent mess that would make TF2 developers cry
 During your read, be it for maintenance or curiosity, you will find a million comments and commits all full of various expletives and profanities. However, I guarantee that it works, barely. Probably.  
 
-Guide to using this code:  
+## Guide to using this code:  
 
-
+idk
 
 
 
@@ -43,9 +42,9 @@ Q: Can I help maintain this?
 >    A: That's not for me to decide.  
 
 
-Songs that were listened to on Loop in the making of this:  
+### Songs that were listened to on Loop in the making of this:  
 
-### Ama Section:  
+**Ama Section:** 
 
     https://youtu.be/c56TpxfO9q0?si=Icr_5AO_U-wrxhm1 Telepathy feat. Hatsune Miku   
 
@@ -58,3 +57,15 @@ Songs that were listened to on Loop in the making of this:
     https://youtu.be/v7aZjZmSrps?si=xUHtcOp0EUvzL4NB MoeChakkaFire - Will Stetson Cover  
 
     https://youtu.be/3e8tdT92KKI?si=u_9-Vv41qNB9TJ7l California Girls - Teto Cover  
+
+    https://youtu.be/1Swg-aBO9eY?si=xXiq1I3F6Y-HVPZw -Konton Boogie / jon-YAKITORY, Hatsune Miku-
+
+    https://www.youtube.com/watch?v=UHbmkxv-874 Liar Dancer
+
+
+
+
+
+
+
+**Jane Section:**
