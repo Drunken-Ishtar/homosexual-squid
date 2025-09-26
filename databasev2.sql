@@ -162,12 +162,6 @@ CREATE TABLE `user_comments` (
   `comment_location` varchar(500) NOT NULL
 );
 
-CREATE TABLE `backlog_patchnotes` (
-  `bk_id_note` int PRIMARY KEY NOT NULL,
-  `bknote_name` varchar(30) NOT NULL,
-  `bknote_note` varchar(65365) NOT NULL
-);
-
 CREATE TABLE `backlog_tournament` (
   `bk_id_tournament` int PRIMARY KEY,
   `bktournament_map` int NOT NULL,
