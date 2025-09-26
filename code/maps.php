@@ -9,7 +9,7 @@ $exe = mysqli_query($con, $sql);
 while ($res = mysqli_fetch_array ($exe)){
     $map = $res['id_map'];
     $map_name = $res['map_name'];
-    echo"<a href='as_map?id_map=$map'>$map_name</a>"
+    echo"<a href='asmap?id_map=$map'>$map_name</a>";
 };
 ?>
 
