@@ -162,7 +162,7 @@ CREATE TABLE `user_comments` (
 );
 
 CREATE TABLE `backlog_tournament` (
-  `bk_id_tournament` int PRIMARY KEY AUTO_INCREMENT,
+  `bk_id_tournament` int,
   `bktournament_map` int,
   `bktournament_desc` varchar(60),
   `bktournament_patch` int,
@@ -171,14 +171,14 @@ CREATE TABLE `backlog_tournament` (
 );
 
 CREATE TABLE `backlog_eventplayer` (
-  `bk_id_eventplayer` int AUTO_INCREMENT,
+  `bk_id_eventplayer` int,
   `bkhalloween_candy` int,
   `bkhalloween_coins` int,
   `bkxmas_bulbs` int
 );
 
 CREATE TABLE `backlog_character` (
-  `id_chara` int PRIMARY KEY AUTO_INCREMENT,
+  `id_chara` int,
   `chara_name` varchar(20),
   `chara_hp` char(4),
   `chara_ws` char(4),
@@ -190,7 +190,7 @@ CREATE TABLE `backlog_character` (
 );
 
 CREATE TABLE `backlog_weapon` (
-  `id_weapon` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `id_weapon` int,
   `id_chara` int,
   `weapon_name` varchar(30),
   `weapon_rpm` varchar(10),
@@ -205,21 +205,21 @@ CREATE TABLE `backlog_weapon` (
 );
 
 CREATE TABLE `backlog_map` (
-  `id_map` int PRIMARY KEY AUTO_INCREMENT,
+  `id_map` int,
   `map_name` varchar(30),
   `map_desc` varchar(60),
   `map_image` varchar(30)
 );
 
 CREATE TABLE `backlog_teams` (
-  `id_asteam` int PRIMARY KEY AUTO_INCREMENT,
+  `id_asteam` int,
   `team_name` varchar(30),
   `team_player` int,
   `team_image` varchar(30)
 );
 
 CREATE TABLE `backlog_events` (
-  `id_mcevent` int PRIMARY KEY AUTO_INCREMENT,
+  `id_mcevent` int,
   `mcevent_name` varchar(30),
   `mcevent_desc` varchar(65365),
   `mcevent_type` int,
@@ -228,14 +228,14 @@ CREATE TABLE `backlog_events` (
 );
 
 CREATE TABLE `backlog_comments` (
-  `id_comment` int PRIMARY KEY AUTO_INCREMENT,
+  `id_comment` int ,
   `id_user` int,
   `comment_text` varchar(5000),
   `comment_location` varchar(500)
 );
 
 CREATE TABLE `backlog_halloweenpowers` (
-  `id_mchallpower` int PRIMARY KEY AUTO_INCREMENT,
+  `id_mchallpower` int,
   `mchallpower_name` varchar(30),
   `mchallpower_desc` varchar(60),
   `mchallpower_owner` int
