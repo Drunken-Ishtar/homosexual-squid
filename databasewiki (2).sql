@@ -7,12 +7,7 @@ CREATE TABLE `users` (
   `user_avatar` varchar(20),
   `user_type` tinyint NOT NULL
 );
-CREATE TABLE `eventplayer` (
-  `id_eventplayer` int primary key,
-  `halloween_candy` int,
-  `halloween_coins` int,
-  `xmas_bulbs` int
-);
+
 CREATE TABLE `as_tournament` (
   `id_astournament` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `astournament_map` int NOT NULL,
@@ -53,8 +48,8 @@ CREATE TABLE `as_character` (
   `chara_hp` char(4) NOT NULL,
   `chara_ws` char(4) NOT NULL,
   `chara_rs` char(4) NOT NULL,
-  `chara_primary` int,
-  `chara_secondary` int,
+  `chara_primary` varchar(30) NOT NULL,
+  `chara_secondary` varchar(30) NOT NULL,
   `chara_desc` varchar(60) NOT NULL,
   `chara_lore` varchar(65365)
 );
@@ -66,7 +61,7 @@ CREATE TABLE `as_chara_images` (
 
 CREATE TABLE `as_weapon` (
   `id_weapon` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  `id_chara` int,
+  `id_chara` int NOT NULL,
   `weapon_name` varchar(30) NOT NULL,
   `weapon_rpm` varchar(10) NOT NULL,
   `weapon_dps` varchar(10) NOT NULL,
@@ -105,7 +100,7 @@ CREATE TABLE `mc_eventtype` (
 
 CREATE TABLE `mc_halloween` (
   `id_mchall` int PRIMARY KEY AUTO_INCREMENT,
-  `mchall_daily`int NOT NULL,
+  `mchall_daily` varchar(60) NOT NULL,
   `mchall_theme` varchar(60) NOT NULL,
   `mchall_activehouses` int
 );
@@ -153,7 +148,12 @@ CREATE TABLE `as_mappool` (
   `id_map` int
 );
 
-
+CREATE TABLE `eventplayer` (
+  `id_eventplayer` int,
+  `halloween_candy` int,
+  `halloween_coins` int,
+  `xmas_bulbs` int
+);
 
 CREATE TABLE `user_comments` (
   `id_comment` int PRIMARY KEY AUTO_INCREMENT,
@@ -172,7 +172,7 @@ CREATE TABLE `backlog_tournament` (
 );
 
 CREATE TABLE `backlog_eventplayer` (
-  `bk_id_eventplayer` int PRIMARY KEY AUTO_INCREMENT,
+  `bk_id_eventplayer` int AUTO_INCREMENT,
   `bkhalloween_candy` int,
   `bkhalloween_coins` int,
   `bkxmas_bulbs` int
@@ -180,28 +180,28 @@ CREATE TABLE `backlog_eventplayer` (
 
 CREATE TABLE `backlog_character` (
   `id_chara` int PRIMARY KEY AUTO_INCREMENT,
-  `chara_name` varchar(20) ,
-  `chara_hp` char(4) ,
-  `chara_ws` char(4),
-  `chara_rs` char(4),
-  `chara_primary` int,
-  `chara_secondary` int,
+  `chara_name` varchar(20) NOT NULL,
+  `chara_hp` char(4) NOT NULL,
+  `chara_ws` char(4) NOT NULL,
+  `chara_rs` char(4) NOT NULL,
+  `chara_primary` varchar(30) NOT NULL,
+  `chara_secondary` varchar(30) NOT NULL,
   `chara_desc` varchar(60) NOT NULL,
   `chara_lore` varchar(65365)
 );
 
 CREATE TABLE `backlog_weapon` (
-  `id_weapon` int PRIMARY KEY AUTO_INCREMENT,
-  `id_chara` int ,
-  `weapon_name` varchar(30) ,
-  `weapon_rpm` varchar(10) ,
-  `weapon_dps` varchar(10),
-  `weapon_maxammo` varchar(10) ,
-  `weapon_reserveammo` varchar(10) ,
-  `weapon_dmg` varchar(10) ,
-  `weapon_headshot` varchar(10) ,
-  `weapon_accuracy` varchar(10) ,
-  `weapon_desc` varchar(50),
+  `id_weapon` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `id_chara` int NOT NULL,
+  `weapon_name` varchar(30) NOT NULL,
+  `weapon_rpm` varchar(10) NOT NULL,
+  `weapon_dps` varchar(10) NOT NULL,
+  `weapon_maxammo` varchar(10) NOT NULL,
+  `weapon_reserveammo` varchar(10) NOT NULL,
+  `weapon_dmg` varchar(10) NOT NULL,
+  `weapon_headshot` varchar(10) NOT NULL,
+  `weapon_accuracy` varchar(10) NOT NULL,
+  `weapon_desc` varchar(50) NOT NULL,
   `weapon_hp` varchar(30)
 );
 
