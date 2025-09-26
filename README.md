@@ -1,10 +1,10 @@
 # homosexual-squid
-Introduction: 
+## Introduction: 
 
-    Hello poor unfortunate soul that is reading this,
-    Welcome to the official source code for the DDD Wiki.
-    This code is an abhorrent mess that would make TF2 developers cry
-    During your read, be it for maintenance or curiosity, you will find a million comments and commits all full of various expletives and profanities. However, I guarantee that it works, barely. Probably.  
+Hello poor unfortunate soul that is reading this,
+Welcome to the official source code for the DDD Wiki.
+This code is an abhorrent mess that would make TF2 developers cry
+During your read, be it for maintenance or curiosity, you will find a million comments and commits all full of various expletives and profanities. However, I guarantee that it works, barely. Probably.  
 
 Guide to using this code:  
 
