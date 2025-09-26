@@ -163,7 +163,7 @@ CREATE TABLE `user_comments` (
 );
 
 CREATE TABLE `backlog_tournament` (
-  `bk_id_tournament` int PRIMARY KEY,
+  `bk_id_tournament` int PRIMARY KEY AUTO_INCREMENT,
   `bktournament_map` int NOT NULL,
   `bktournament_desc` varchar(60) NOT NULL,
   `bktournament_patch` int NOT NULL,
@@ -172,14 +172,14 @@ CREATE TABLE `backlog_tournament` (
 );
 
 CREATE TABLE `backlog_eventplayer` (
-  `bk_id_eventplayer` int,
+  `bk_id_eventplayer` int AUTO_INCREMENT,
   `bkhalloween_candy` int,
   `bkhalloween_coins` int,
   `bkxmas_bulbs` int
 );
 
 CREATE TABLE `backlog_character` (
-  `id_chara` int PRIMARY KEY,
+  `id_chara` int PRIMARY KEY AUTO_INCREMENT,
   `chara_name` varchar(20) NOT NULL,
   `chara_hp` char(4) NOT NULL,
   `chara_ws` char(4) NOT NULL,
@@ -191,7 +191,7 @@ CREATE TABLE `backlog_character` (
 );
 
 CREATE TABLE `backlog_weapon` (
-  `id_weapon` int PRIMARY KEY NOT NULL,
+  `id_weapon` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `id_chara` int NOT NULL,
   `weapon_name` varchar(30) NOT NULL,
   `weapon_rpm` varchar(10) NOT NULL,
@@ -206,21 +206,21 @@ CREATE TABLE `backlog_weapon` (
 );
 
 CREATE TABLE `backlog_map` (
-  `id_map` int PRIMARY KEY NOT NULL,
+  `id_map` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `map_name` varchar(30) NOT NULL,
   `map_desc` varchar(60) NOT NULL,
   `map_image` varchar(30) NOT NULL
 );
 
 CREATE TABLE `backlog_teams` (
-  `id_asteam` int PRIMARY KEY NOT NULL,
+  `id_asteam` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `team_name` varchar(30) NOT NULL,
   `team_player` int NOT NULL,
   `team_image` varchar(30) NOT NULL
 );
 
 CREATE TABLE `backlog_events` (
-  `id_mcevent` int PRIMARY KEY,
+  `id_mcevent` int PRIMARY KEY AUTO_INCREMENT,
   `mcevent_name` varchar(30) NOT NULL,
   `mcevent_desc` varchar(65365) NOT NULL,
   `mcevent_type` int NOT NULL,
@@ -229,14 +229,14 @@ CREATE TABLE `backlog_events` (
 );
 
 CREATE TABLE `backlog_comments` (
-  `id_comment` int PRIMARY KEY,
+  `id_comment` int PRIMARY KEY AUTO_INCREMENT,
   `id_user` int NOT NULL,
   `comment_text` varchar(5000),
   `comment_location` varchar(500) NOT NULL
 );
 
 CREATE TABLE `backlog_halloweenpowers` (
-  `id_mchallpower` int PRIMARY KEY,
+  `id_mchallpower` int PRIMARY KEY AUTO_INCREMENT,
   `mchallpower_name` varchar(30) NOT NULL,
   `mchallpower_desc` varchar(60) NOT NULL,
   `mchallpower_owner` int

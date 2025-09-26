@@ -21,7 +21,7 @@ CREATE TRIGGER trg_bklg_chara
 BEFORE UPDATE ON as_character 
 FOR EACH ROW
 BEGIN
-    INSERT INTO backlog_chara(id_chara,chara_name,chara_hp,chara_ws,chara_rs,chara_primary,chara_secondary,chara_desc,chara_lore)
+    INSERT INTO backlog_character(id_chara,chara_name,chara_hp,chara_ws,chara_rs,chara_primary,chara_secondary,chara_desc,chara_lore)
     VALUES (OLD.id_chara,OLD.chara_name,OLD.chara_hp,OLD.chara_ws,OLD.chara_rs,OLD.chara_primary,OLD.chara_secondary,OLD.chara_desc,OLD.chara_lore);
 END//
 DELIMITER ;
