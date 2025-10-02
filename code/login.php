@@ -1,7 +1,7 @@
 <?php include 'top.html';
 session_start();
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password =$_POST['password'];
 
 $con=mysqli_connect('localhost','root','','3d_wiki');
 //grab users and stuff here 
@@ -20,6 +20,7 @@ if (password_verify($password, $password_db)){
 }
 else {
     header('location:logon.php');
+    session_abort();
 }
  mysqli_close($con);
 if ($r['username']!=NULL){
